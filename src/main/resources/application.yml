@@ -1,0 +1,11 @@
+spring:
+  main:
+    lazy-initialization: false # Global Lazy Bean Initialization - Enabled by default in spring-boot 2.2
+
+app:
+  test-property-1: test1
+  test-property-2: test2
+
+feature:
+  boolean-flag:
+    enabled: false
