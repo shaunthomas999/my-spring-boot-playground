@@ -9,3 +9,6 @@ app:
 feature:
   boolean-flag:
     enabled: false
+
+logging.level:
+  com.shaunthomas999: debug

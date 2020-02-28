@@ -5,6 +5,9 @@ import org.springframework.test.util.ReflectionTestUtils;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * ReflectionTestUtils
+ */
 public class SomeServiceTest {
 
   private SomeService someService;
