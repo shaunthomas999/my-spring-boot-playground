@@ -12,10 +12,6 @@ public class SomeService {
   }
 
   private boolean somePrivateMethod(int input) {
-    if (input % 3 == 0) {
-      return true;
-    }
-
-    return false;
+    return input % 3 == 0;
   }
 }

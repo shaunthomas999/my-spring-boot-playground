@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -15,18 +16,19 @@ import org.springframework.web.bind.annotation.RestController;
  *   - condition will match only when enabled=true (if the property is missing in config, then it will be disabled)
  */
 @RestController
+@RequestMapping("/api")
 @AllArgsConstructor
 @ConditionalOnProperty(name = "feature.boolean-flag.enabled")
 public class SpringRestController {
 
   private final SomeService someService;
 
-  @GetMapping("/api")
+  @GetMapping
   public ResponseEntity<Void> restHandler() {
     return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).build();
   }
 
-  @GetMapping("/api/2")
+  @GetMapping("/2")
   public ResponseEntity<String> restHandler2() {
     someService.someMethod();
     return ResponseEntity.ok("");
