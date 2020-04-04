@@ -1,0 +1,7 @@
+= My spring-boot playground
+
+== Try out
+
+=== Kubernetes
+
+* https://www.baeldung.com/spring-boot-minikube

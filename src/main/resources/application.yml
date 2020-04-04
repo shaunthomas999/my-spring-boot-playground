@@ -1,3 +1,9 @@
+server:
+  port: 8031
+
+logging.level:
+  com.shaunthomas999: debug
+
 spring:
   main:
     lazy-initialization: false # Global Lazy Bean Initialization - Enabled by default in spring-boot 2.2
@@ -8,7 +14,4 @@ app:
 
 feature:
   boolean-flag:
-    enabled: false
-
-logging.level:
-  com.shaunthomas999: debug
+    enabled: true
