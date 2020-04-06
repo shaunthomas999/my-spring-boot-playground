@@ -1,5 +1,9 @@
 ###
 
+# Also can be named with `.http` extension
+
+###
+
 http://localhost:8031/api
 
 ###
