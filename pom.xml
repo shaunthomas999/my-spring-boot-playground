@@ -8,7 +8,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <name>my-spring-boot-playground</name>
-  <description>Demo project for Spring Boot</description>
+  <description>My Spring Boot Playground</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
