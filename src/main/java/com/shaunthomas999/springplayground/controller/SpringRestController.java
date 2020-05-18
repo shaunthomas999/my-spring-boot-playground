@@ -31,6 +31,6 @@ public class SpringRestController {
   @GetMapping("/2")
   public ResponseEntity<String> restHandler2() {
     someService.someMethod();
-    return ResponseEntity.ok("");
+    return ResponseEntity.ok("Hello Shaun!");
   }
 }

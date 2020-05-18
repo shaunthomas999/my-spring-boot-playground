@@ -1,13 +1,14 @@
 ###
 
 # Also can be named with `.http` extension
+# Reference - https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html#
 
 ###
 
-http://localhost:8031/api
+GET http://localhost:8031/api
 
 ###
 
-http://localhost:8031/api/2
+GET http://localhost:8031/api/2
 
 ###
