@@ -2,6 +2,6 @@
 
 ## Technologies used
 
-* Java 8
+* Java 11
 * Maven 3.6.3
-* Spring-boot 2.2.0
+* Spring-boot 2.3.0
