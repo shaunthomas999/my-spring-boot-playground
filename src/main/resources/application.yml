@@ -1,12 +1,38 @@
 server:
   port: 8080
 
-logging.level:
-  com.shaunthomas999: debug
-
 spring:
   main:
-    lazy-initialization: false # Global Lazy Bean Initialization - Enabled by default in spring-boot 2.2
+    lazy-initialization: true # Global Lazy Bean Initialization - Enabled by default in spring-boot 2.2
+  application:
+    name: my-spring-boot-playground
+
+# Customize Spring Boot Info actuator
+info:
+  java.vm.vendor: ${java.vm.vendor}
+  java.version: ${java.version}
+  application.encoding: @project.build.sourceEncoding@
+  application.name: ${spring.application.name}
+  application.artifact: @project.artifactId@
+  application.version: @project.version@
+  spring.boot.version: @spring-boot.version@
+
+# Expose all Spring Boot Actuator endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    probes:
+      enabled: true
+
+endpoint:
+  health:
+    show-details: always
+
+logging.level:
+  com.shaunthomas999: debug
 
 app:
   test-property-1: test1

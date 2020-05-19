@@ -73,14 +73,26 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <!--
+        // This is needed to run the application from jar (fat jar)
+        // No required when using spring-boot-starter-parent
         <executions>
-          <!-- This is needed to run the application from jar (fat jar)-->
           <execution>
             <goals>
               <goal>repackage</goal>
             </goals>
           </execution>
         </executions>
+          -->
+        <configuration>
+          <!-- https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/html/#repackage-layers -->
+          <layers>
+            <enabled>true</enabled>
+          </layers>
+          <image>
+            <name>docker.io/shaunthomas999/${project.artifactId}:${project.version}</name>
+          </image>
+        </configuration>
       </plugin>
     </plugins>
   </build>
