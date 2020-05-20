@@ -1,4 +1,4 @@
-package com.shaunthomas999.springplayground;
+package com.shaunthomas999.playground;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,4 +1,4 @@
-package com.shaunthomas999.springplayground.config;
+package com.shaunthomas999.playground.config;
 
 import lombok.Getter;
 import org.springframework.boot.context.properties.ConfigurationProperties;

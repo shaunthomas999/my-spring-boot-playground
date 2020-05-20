@@ -1,4 +1,4 @@
-package com.shaunthomas999.springplayground.mappers;
+package com.shaunthomas999.playground.mapper;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

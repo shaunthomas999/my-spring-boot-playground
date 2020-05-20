@@ -1,6 +1,6 @@
-package com.shaunthomas999.springplayground.services;
+package com.shaunthomas999.playground.service;
 
-import com.shaunthomas999.springplayground.model.Product;
+import com.shaunthomas999.playground.model.Product;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -17,8 +17,8 @@ public class SomeService {
 
   public List<Product> getProducts() {
     return Arrays.asList(
-        new Product("milk", 1.99, 100L, Arrays.asList("Drink", "Basics")),
-        new Product("bread", 0.99, 100L, Arrays.asList("Food", "Basics"))
+        new Product(1L, "milk", 1.99, 100L, Arrays.asList("Drink", "Basics")),
+        new Product(2L, "bread", 0.99, 100L, Arrays.asList("Food", "Basics"))
     );
   }
 

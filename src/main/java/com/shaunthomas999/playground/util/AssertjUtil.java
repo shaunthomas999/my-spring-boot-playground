@@ -1,4 +1,4 @@
-package com.shaunthomas999.springplayground.util;
+package com.shaunthomas999.playground.util;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

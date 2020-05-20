@@ -1,6 +1,6 @@
-package com.shaunthomas999.springplayground;
+package com.shaunthomas999.playground;
 
-import com.shaunthomas999.springplayground.config.ApplicationProperties;
+import com.shaunthomas999.playground.config.ApplicationProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

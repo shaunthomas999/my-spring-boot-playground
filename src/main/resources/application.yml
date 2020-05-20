@@ -6,6 +6,21 @@ spring:
     lazy-initialization: true # Global Lazy Bean Initialization - Enabled by default in spring-boot 2.2
   application:
     name: my-spring-boot-playground
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    continue-on-error: false
+  jpa:
+    hibernate:
+      # https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto-initialize-a-database-using-hibernate
+      # Possible values - none, validate, update, create, and create-drop
+      ddl-auto: update # Suitable for production
+    properties:
+      hibernate:
+#        default_schema: appschema
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
 
 # Customize Spring Boot Info actuator
 info:

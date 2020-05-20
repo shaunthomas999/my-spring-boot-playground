@@ -1,7 +1,8 @@
-package com.shaunthomas999.springplayground.controller;
+package com.shaunthomas999.playground.controller;
 
-import com.shaunthomas999.springplayground.services.SomeService;
+import com.shaunthomas999.playground.service.SomeService;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  *   - condition will match only when enabled=true (if the property is missing in config, then it will be disabled)
  */
+@Slf4j
 @RestController
 @RequestMapping("/api")
 @AllArgsConstructor

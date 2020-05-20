@@ -1,4 +1,4 @@
-package com.shaunthomas999.springplayground.util;
+package com.shaunthomas999.playground.util;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

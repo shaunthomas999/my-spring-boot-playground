@@ -1,6 +1,6 @@
-package com.shaunthomas999.springplayground.services;
+package com.shaunthomas999.playground.service;
 
-import com.shaunthomas999.springplayground.model.Product;
+import com.shaunthomas999.playground.model.Product;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.util.ReflectionTestUtils;
