@@ -1,0 +1,24 @@
+= My spring-boot playground
+
+== Try out
+
+=== Kubernetes
+
+* https://www.baeldung.com/spring-boot-minikube
+
+== Spring References
+
+* [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/html/)
+
+=== spring-boot-devtools
+
+* Run the app from Intellij IDEA. Click the hammer icon after every change. Then Intellij IDEA makes the changes available for use instantly.
+
+=== Spring filters
+
+* https://www.baeldung.com/spring-boot-add-filter
+
+=== Java Bean validation
+
+* https://www.baeldung.com/javax-validation
+* https://www.baeldung.com/javax-validation-method-constraints

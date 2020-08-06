@@ -1,6 +1,5 @@
-package com.shaunthomas999.playground.model;
+package com.shaunthomas999.playground.model.order;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,20 +10,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.List;
 
-@Entity
 @Data
+@Entity
 @NoArgsConstructor
-@AllArgsConstructor
-public class Product {
+public class Order {
 
   @Id
   @GeneratedValue(strategy= GenerationType.IDENTITY)
-  private Long productId;
-
-  private String name;
-  private Double price;
-  private Long quantity;
+  private Long orderId;
 
   @ElementCollection
-  private List<String> tags;
+  private List<Long> orderItemId;
 }

@@ -7,6 +7,7 @@ spring:
   application:
     name: my-spring-boot-playground
   datasource:
+    driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
@@ -15,7 +16,8 @@ spring:
     hibernate:
       # https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto-initialize-a-database-using-hibernate
       # Possible values - none, validate, update, create, and create-drop
-      ddl-auto: update # Suitable for production
+      # Suitable for production - validate
+      ddl-auto: update
     properties:
       hibernate:
 #        default_schema: appschema
@@ -26,11 +28,11 @@ spring:
 info:
   java.vm.vendor: ${java.vm.vendor}
   java.version: ${java.version}
-  application.encoding: @project.build.sourceEncoding@
+#  application.encoding: @project.build.sourceEncoding@
   application.name: ${spring.application.name}
-  application.artifact: @project.artifactId@
-  application.version: @project.version@
-  spring.boot.version: @spring-boot.version@
+#  application.artifact: @project.artifactId@
+#  application.version: @project.version@
+#  spring.boot.version: @spring-boot.version@
 
 # Expose all Spring Boot Actuator endpoints
 management:
