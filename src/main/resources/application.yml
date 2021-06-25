@@ -1,3 +1,5 @@
+# Ref: List of common configurations - https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# Ref: Externalize configurations - https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html
 server:
   port: 8080
 
