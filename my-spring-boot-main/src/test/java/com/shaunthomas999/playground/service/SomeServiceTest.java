@@ -1,6 +1,7 @@
 package com.shaunthomas999.playground.service;
 
 import com.shaunthomas999.playground.model.Product;
+import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.util.ReflectionTestUtils;
@@ -33,7 +34,7 @@ public class SomeServiceTest {
   @Test
   public void shouldReturnProducts() {
     List<Product> products = someService.getProducts();
-    assertThat(products)
+    Assertions.assertThat(products)
         .flatExtracting("tags")
         .contains("Food", "Drink", "Basics");
   }
