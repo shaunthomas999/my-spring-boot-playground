@@ -7,4 +7,8 @@
 ## Spring 6
 
 * [Spring Security - Migration - https://docs.spring.io/spring-security/reference/5.8/migration/index.html](https://docs.spring.io/spring-security/reference/5.8/migration/index.html)
-*
+
+## Build
+
+* GraalVM
+* `mvn -DskipTests -Pnative native:compile`
