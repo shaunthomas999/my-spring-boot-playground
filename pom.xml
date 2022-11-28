@@ -4,152 +4,21 @@
   <modelVersion>4.0.0</modelVersion>
   <packaging>pom</packaging>
   <modules>
-    <module>my-spring-boot-2-6</module>
     <module>my-spring-boot-main</module>
+    <module>my-spring-boot-2-6</module>
     <module>my-spring-boot-2-7</module>
     <module>my-spring-boot-3-0</module>
   </modules>
-
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.2.11.RELEASE</version>
-    <relativePath/>
-  </parent>
 
   <groupId>com.shaunthomas999</groupId>
   <artifactId>my-spring-boot-playground</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>my-spring-boot-playground</name>
-  <description>My Spring Boot Playground</description>
+  <name>${project.artifactId}</name>
+  <description>${project.artifactId}</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-    <java.version>11</java.version>
   </properties>
-
-  <dependencies>
-
-    <!-- Spring dependencies -->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-configuration-processor</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-data-jpa</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-actuator</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-devtools</artifactId>
-      <scope>runtime</scope>
-      <optional>true</optional>
-    </dependency>
-
-    <!-- Database dependencies -->
-    <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <version>42.2.12</version>
-<!--      <type>bundle</type>-->
-<!--      <scope>runtime</scope>-->
-    </dependency>
-
-    <!-- Test dependencies -->
-
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-junit-jupiter</artifactId>
-      <version>3.1.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
-    </dependency>
-
-    <!-- utilities -->
-
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <optional>true</optional>
-    </dependency>
-
-    <dependency>
-      <groupId>javax.validation</groupId>
-      <artifactId>validation-api</artifactId>
-      <version>2.0.0.Final</version>
-    </dependency>
-    <dependency>
-      <groupId>org.hibernate.validator</groupId>
-      <artifactId>hibernate-validator</artifactId>
-      <version>6.0.2.Final</version>
-    </dependency>
-    <dependency>
-      <groupId>org.hibernate.validator</groupId>
-      <artifactId>hibernate-validator-annotation-processor</artifactId>
-      <version>6.0.2.Final</version>
-    </dependency>
-<!--    <dependency>-->
-<!--      <groupId>javax.el</groupId>-->
-<!--      <artifactId>javax.el-api</artifactId>-->
-<!--      <version>3.0.0</version>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.glassfish.web</groupId>-->
-<!--      <artifactId>javax.el</artifactId>-->
-<!--      <version>2.2.6</version>-->
-<!--    </dependency>-->
-  </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <!--
-        // This is needed to run the application from jar (fat jar)
-        // Not required when using spring-boot-starter-parent
-        <executions>
-          <execution>
-            <goals>
-              <goal>repackage</goal>
-            </goals>
-          </execution>
-        </executions>
-          -->
-<!--        <configuration>-->
-<!--          &lt;!&ndash; https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/html/#repackage-layers &ndash;&gt;-->
-<!--          <layers>-->
-<!--            <enabled>true</enabled>-->
-<!--          </layers>-->
-<!--          <image>-->
-<!--            <name>docker.io/shaunthomas999/${project.artifactId}:${project.version}</name>-->
-<!--          </image>-->
-<!--&lt;!&ndash;          <excludeDevtools>false</excludeDevtools>&ndash;&gt;-->
-<!--        </configuration>-->
-      </plugin>
-    </plugins>
-  </build>
 </project>

@@ -132,6 +132,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring-boot.version}</version>
         <!--
         // This is needed to run the application from jar (fat jar)
         // Not required when using spring-boot-starter-parent
