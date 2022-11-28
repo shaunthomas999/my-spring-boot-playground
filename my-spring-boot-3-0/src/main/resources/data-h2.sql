@@ -1,0 +1,4 @@
+INSERT INTO GREETING
+VALUES (1, 'en', 'Hello');
+INSERT INTO GREETING
+VALUES (2, 'es', 'Hola');
