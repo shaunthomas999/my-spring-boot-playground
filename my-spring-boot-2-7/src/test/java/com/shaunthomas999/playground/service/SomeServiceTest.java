@@ -2,6 +2,7 @@ package com.shaunthomas999.playground.service;
 
 import com.shaunthomas999.playground.model.Product;
 import org.assertj.core.api.Assertions;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.util.ReflectionTestUtils;
@@ -25,7 +26,7 @@ public class SomeServiceTest {
 
   @Test
   public void testSomePrivateMethod() {
-    assertEquals(true, ReflectionTestUtils.invokeMethod(someService, "somePrivateMethod", 30));
+    Assert.assertEquals(true, ReflectionTestUtils.invokeMethod(someService, "somePrivateMethod", 30));
   }
 
   /*

@@ -1,5 +1,6 @@
 package com.shaunthomas999.playground.util;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +12,7 @@ class AssertjUtilTest {
   @Disabled
   @Test
   void purposefulFail() {
-    assertThat(AssertjUtil.returnTrue())
+    Assertions.assertThat(AssertjUtil.returnTrue())
         .as("This is supposed to fail always").isTrue();
 
     fail("This is purposefully failed");

@@ -1,5 +1,6 @@
 package com.shaunthomas999.playground.mapper;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,6 +17,6 @@ class ComponentMapperTest {
 
   @Test
   void shouldAppendCorrectly() {
-    assertThat(componentMapper.appendsArrows("text")).contains(">>>");
+    Assertions.assertThat(componentMapper.appendsArrows("text")).contains(">>>");
   }
 }
