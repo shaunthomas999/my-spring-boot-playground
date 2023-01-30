@@ -1,7 +1,7 @@
 # Ref: List of common configurations - https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # Ref: Externalize configurations - https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html
 server:
-  port: 8080
+  port: 8400
 
 spring:
   main:
@@ -13,7 +13,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
-    continue-on-error: false
   jpa:
     hibernate:
       # https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto-initialize-a-database-using-hibernate
@@ -25,6 +24,9 @@ spring:
 #        default_schema: appschema
         dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
+  sql:
+    init:
+      continue-on-error: false
 
 # Customize Spring Boot Info actuator
 info:
