@@ -11,4 +11,6 @@
 
 ### Reference
 
-* https://medium.com/@TimvanBaarsen/first-look-at-cloud-native-buildpacks-support-in-spring-boot-2-3-milestone-1-ece8e72ed93f
+* Cloud Native Buildpacks
+  * https://medium.com/@TimvanBaarsen/first-look-at-cloud-native-buildpacks-support-in-spring-boot-2-3-milestone-1-ece8e72ed93f
+  * https://medium.com/@TimvanBaarsen/whats-new-in-spring-boot-2-3-22d01d036f11

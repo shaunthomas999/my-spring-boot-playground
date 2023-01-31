@@ -4,6 +4,8 @@ server:
     context-path: /
 
 spring:
+  application:
+    name: my-spring-boot-3-playground
   main:
     banner-mode: console
   datasource:
@@ -46,14 +48,15 @@ management:
         include: health,info
   #    enabled-by-default: false
   endpoint:
-#    info:
+    health:
 #      enabled: true
-#    health:
+      show-details: always
+#    info:
 #      enabled: true
 #    metrics:
 #      enabled: true
-    prometheus:
-      enabled: true
+#    prometheus:
+#      enabled: true
 #    mappings:
 #      enabled: true
 #    env:
@@ -62,20 +65,20 @@ management:
     metrics:
       export:
         enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 #  To see below info.app this needs to be in place
   info:
     env:
       enabled: true
 
-
-
 # https://medium.com/@TimvanBaarsen/help-my-spring-boot-info-actuator-endpoint-is-enabled-but-i-dont-see-any-environment-details-c2d41a7b24d7
 # https://docs.spring.io/spring-boot/docs/3.0.2/reference/html/actuator.html#actuator.endpoints.info
 info:
   app:
-    # TODO - fix below
     name: ${spring.application.name}
-    description: Very cool Spring Boot application
+    description: My Spring Boot 3 Playground - Greetings API
     # TODO - fix below
 #    version: '@project.version@'
 #    spring-boot-version: '@project.parent.version@'

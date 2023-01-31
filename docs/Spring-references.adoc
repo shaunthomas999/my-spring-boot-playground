@@ -1,13 +1,8 @@
 = My spring-boot playground
 
-== Try out
-
-=== Kubernetes
-
-* https://www.baeldung.com/spring-boot-minikube
-
 == Spring References
 
+* https://docs.spring.io/spring-boot/docs/3.0.2/reference/html/index.html
 * [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/html/)
 
 === spring-boot-devtools
@@ -22,3 +17,7 @@
 
 * https://www.baeldung.com/javax-validation
 * https://www.baeldung.com/javax-validation-method-constraints
+
+=== Graceful Shutdown in Spring
+
+* https://tanzu.vmware.com/developer/guides/app-enhancements-graceful-shutdown/
