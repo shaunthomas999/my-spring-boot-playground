@@ -1,5 +1,7 @@
 server:
   port: 8300
+  servlet:
+    context-path: /
 
 spring:
   main:
@@ -24,3 +26,56 @@ spring:
     console:
       enabled: true
       path: /h2-console
+
+# Full list in here - https://docs.spring.io/spring-boot/docs/3.0.2/reference/html/actuator.html#actuator.endpoints
+# Detailed actuator endpoints info - https://docs.spring.io/spring-boot/docs/3.0.2/actuator-api/htmlsingle/
+# Security of actuator endpoints - https://docs.spring.io/spring-boot/docs/3.0.2/reference/html/actuator.html#actuator.endpoints.security
+# Custom endpoint - https://docs.spring.io/spring-boot/docs/3.0.2/reference/html/actuator.html#actuator.endpoints.implementing-custom
+# K8s - https://docs.spring.io/spring-boot/docs/3.0.2/reference/html/actuator.html#actuator.endpoints.kubernetes-probes
+#
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: info,health,metrics,prometheus,mappings,env
+#        include: *
+        exclude: beans
+    jmx:
+      exposure:
+        include: health,info
+  #    enabled-by-default: false
+  endpoint:
+#    info:
+#      enabled: true
+#    health:
+#      enabled: true
+#    metrics:
+#      enabled: true
+    prometheus:
+      enabled: true
+#    mappings:
+#      enabled: true
+#    env:
+#      enabled: true
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+#  To see below info.app this needs to be in place
+  info:
+    env:
+      enabled: true
+
+
+
+# https://medium.com/@TimvanBaarsen/help-my-spring-boot-info-actuator-endpoint-is-enabled-but-i-dont-see-any-environment-details-c2d41a7b24d7
+# https://docs.spring.io/spring-boot/docs/3.0.2/reference/html/actuator.html#actuator.endpoints.info
+info:
+  app:
+    # TODO - fix below
+    name: ${spring.application.name}
+    description: Very cool Spring Boot application
+    # TODO - fix below
+#    version: '@project.version@'
+#    spring-boot-version: '@project.parent.version@'

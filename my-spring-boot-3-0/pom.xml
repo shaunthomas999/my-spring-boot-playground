@@ -70,6 +70,13 @@
       <scope>runtime</scope>
     </dependency>
 
+    <!-- Monitoring -->
+    <dependency>
+      <groupId>io.micrometer</groupId>
+      <artifactId>micrometer-registry-prometheus</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
     <!-- Testing -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -91,6 +98,22 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <version>${spring-boot.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <!-- To create META-INF/build-info.properties file. Also shown in /actuator/info -->
+              <goal>build-info</goal>
+            </goals>
+            <configuration>
+              <additionalProperties>
+                <encoding>UTF-8</encoding>
+                <java-version>${java.version}</java-version>
+                <maven-compiler-source>${maven.compiler.source}</maven-compiler-source>
+                <spring-boot-version>${spring-boot.version}</spring-boot-version>
+              </additionalProperties>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

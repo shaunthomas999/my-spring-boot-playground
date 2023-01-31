@@ -12,3 +12,12 @@
 
 * GraalVM
 * `mvn -DskipTests -Pnative native:compile`
+
+## Prometheus
+
+* https://www.callicoder.com/spring-boot-actuator-metrics-monitoring-dashboard-prometheus-grafana/
+* https://prometheus.io/docs/prometheus/latest/getting_started/#configuring-prometheus-to-monitor-itself
+
+```
+docker run -d --name=prometheus -p 9090:9090 -v $HOME/Developer/git2/02_Spring/my-spring-boot-playground:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml
+```
