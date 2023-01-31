@@ -51,6 +51,7 @@ management:
     health:
 #      enabled: true
       show-details: always
+      show-components: always
 #    info:
 #      enabled: true
 #    metrics:
@@ -69,6 +70,9 @@ management:
     tags:
       application: ${spring.application.name}
 #  To see below info.app this needs to be in place
+  health:
+    diskspace:
+      enabled: false
   info:
     env:
       enabled: true
