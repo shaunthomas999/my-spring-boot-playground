@@ -7,9 +7,9 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 
 @SpringBootApplication
 @EnableConfigurationProperties(ApplicationProperties.class)
-public class SpringPlaygroundApplication {
+public class SpringBoot2Main {
 
   public static void main(String[] args) {
-    SpringApplication.run(SpringPlaygroundApplication.class, args);
+    SpringApplication.run(SpringBoot2Main.class, args);
   }
 }
