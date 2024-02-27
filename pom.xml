@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <packaging>pom</packaging>
   <modules>
-    <module>my-spring-boot-2-7</module>
+    <module>my-spring-boot-2-x</module>
     <module>my-spring-boot-3-x</module>
   </modules>
 
