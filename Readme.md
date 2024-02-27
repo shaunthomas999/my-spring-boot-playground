@@ -9,7 +9,8 @@ In order to work on this project you need the following tools with specified ver
 
 ## Technologies used in the project
 
-* Spring-boot 2.3.0
+* Spring-boot 2.x stream latest
+* Spring-boot 3.x stream latest
 * PostgreSQL
 
 ## PostgreSQL

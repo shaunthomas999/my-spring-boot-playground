@@ -9,7 +9,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>my-spring-boot-3-0</artifactId>
+  <artifactId>my-spring-boot-3-x</artifactId>
   <name>${project.artifactId}</name>
   <description>${project.artifactId}</description>
 
@@ -19,7 +19,7 @@
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <spring-boot.version>3.2.2</spring-boot.version>
+    <spring-boot.version>3.2.3</spring-boot.version>
   </properties>
 
   <dependencyManagement>
@@ -84,12 +84,12 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- TODO - Remove this after verification -->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-properties-migrator</artifactId>
-      <scope>runtime</scope>
-    </dependency>
+    <!-- Migrator -->
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.boot</groupId>-->
+<!--      <artifactId>spring-boot-properties-migrator</artifactId>-->
+<!--      <scope>runtime</scope>-->
+<!--    </dependency>-->
   </dependencies>
 
   <build>
